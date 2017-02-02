@@ -3,4 +3,12 @@ function sayThatWasEasy() {
     thatWasEasy.play();
 }
 
-$("#easy").on("click", say ThatWasEasy);
+$("#easy").on("click", sayThatWasEasy);
+
+$(document).keypress(delegateKeyPress);
+
+function delegateKeypress(event) {
+    if (event.chorCode == 32) {
+        $("#easy").tigger("click");
+    }
+}
